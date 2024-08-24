@@ -5,101 +5,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jacques Soude | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="boster.jpg" type="image/x-icon">
 </head>
 
-<body>
-    <header>
-        <div class="container">
-            <h1>Jacques Soude</h1>
-            <p>Fullstack Web Developer & IT Security Specialist</p>
+<body class="bg-gray-900 text-white">
+
+    <!-- Header Section -->
+    <header class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Jacques Soude</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="hover:text-gray-400">Home</a></li>
+                    <li><a href="#profile" class="hover:text-gray-400">Profile</a></li>
+                    <li><a href="#skills" class="hover:text-gray-400">Skills</a></li>
+                    <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
+                    <li><a href="#experience" class="hover:text-gray-400">Experience</a></li>
+                    <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Home Section -->
+    <section id="home" class="h-screen flex flex-col justify-center items-center bg-cover bg-center"
+        style="background-image: url('img.png');">
+        <h2 class="text-5xl font-bold mb-4">Fullstack Web Developer & IT Security Specialist</h2>
+        <p class="text-xl mb-8">With over 6 years of experience in DevOps and web development</p>
+        <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">View My Work</a>
+    </section>
 
-    <section id="home" class="section">
-        <div class="container">
-            <h2>Welcome to My Portfolio</h2>
-            <p>I am a DevOps professional with over 6 years of experience in project deployment, implementation, unit
-                testing, and full-stack web development. I specialize in IT security and have worked on various projects
-                using Python, PHP, JavaScript, and more.</p>
+    <!-- Profile Section -->
+    <section id="profile" class="py-16 bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Profile</h2>
+            <p class="text-xl text-center mb-4">I am a DevOps professional with over 6 years of experience in project
+                deployment, implementation, unit testing, and full-stack web development.</p>
+            <p class="text-xl text-center mb-4">Contact: +229 61 93 19 97 | Email: bostersoude@gmail.com | Location:
+                Abomey-Calavi, Bénin</p>
+            <p class="text-xl text-center mb-4">
+                <a href="https://linkedin.com/in/jacques-moncr%C3%A9do-soude-6b6485195/" class="text-blue-500 hover:underline">LinkedIn</a> | 
+                <a href="https://fr.fiverr.com/jacquessoude" class="text-blue-500 hover:underline">Fiverr</a> | 
+                <a href="https://www.upwork.com/freelancers/~014a811bc4b0a9e6b2" class="text-blue-500 hover:underline">Upwork</a>
+            </p>
         </div>
     </section>
 
-    <section id="skills" class="section">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Python, PHP & JavaScript</li>
-                <li>Laravel, Symfony, Django</li>
-                <li>Vue.js & React.js</li>
-                <li>GraphQL & API Restful Implementation</li>
-                <li>Docker, Kubernetes</li>
-                <li>SQL, MySQL, PostgreSQL, MongoDB</li>
-                <li>Google Cloud Platform & AWS</li>
-                <li>Linux/Windows System Administration</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Shopify Development - Inno Angels</h3>
-                <p>Developed and enhanced the Shopify platform using Laravel and React.js, improving API integration and
-                    user experience.</p>
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-800">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="skill-item p-6 bg-gray-700 rounded-lg shadow-md hover:bg-gray-600 transition">
+                    <h3 class="text-2xl font-semibold">Database Administration (MySQL, PostgreSQL, MongoDB)</h3>
+                </div>
+                <div class="skill-item p-6 bg-gray-700 rounded-lg shadow-md hover:bg-gray-600 transition">
+                    <h3 class="text-2xl font-semibold">Web Development (Laravel, Symfony, Django)</h3>
+                </div>
+                <div class="skill-item p-6 bg-gray-700 rounded-lg shadow-md hover:bg-gray-600 transition">
+                    <h3 class="text-2xl font-semibold">Frontend Frameworks (Vue.js, React.js)</h3>
+                </div>
+                <div class="skill-item p-6 bg-gray-700 rounded-lg shadow-md hover:bg-gray-600 transition">
+                    <h3 class="text-2xl font-semibold">DevOps Tools (Docker, Kubernetes, GitHub)</h3>
+                </div>
+                <!-- Add more skills -->
             </div>
-            <div class="project">
-                <h3>Python Web Scraping</h3>
-                <p>Provided web scraping services using Python, handling proxies, captchas, and Cloudflare to collect
-                    valuable data from multiple websites.</p>
-            </div>
-            <!-- Add more projects as needed -->
         </div>
     </section>
 
-    <section id="experience" class="section">
-        <div class="container">
-            <h2>Experience</h2>
-            <div class="job">
-                <h3>Fullstack Web Developer - Inno Angels</h3>
-                <p>Worked on developing and maintaining the Shopify platform, integrating various APIs, and enhancing
-                    the user interface using React.js.</p>
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-item p-6 bg-gray-800 rounded-lg shadow-md hover:bg-gray-700 transition">
+                    <h3 class="text-2xl font-semibold">Shopify Development - Inno Angels</h3>
+                    <p>Enhanced Shopify platform with Laravel and React.js, improving API integration and user
+                        experience.</p>
+                </div>
+                <div class="project-item p-6 bg-gray-800 rounded-lg shadow-md hover:bg-gray-700 transition">
+                    <h3 class="text-2xl font-semibold">Web Scraper for E-commerce - Fiverr</h3>
+                    <p>Developed and maintained web scraping tools to extract valuable data from e-commerce sites.</p>
+                </div>
+                <div class="project-item p-6 bg-gray-800 rounded-lg shadow-md hover:bg-gray-700 transition">
+                    <h3 class="text-2xl font-semibold">Conference Website - Symfony</h3>
+                    <p>Developed a conference management system with integrated payment API for event registration.</p>
+                </div>
+                <!-- Add more projects -->
             </div>
-            <div class="job">
-                <h3>Freelance Web Developer</h3>
-                <p>Provided full-stack development services on platforms like Fiverr, focusing on Python, PHP, and
-                    JavaScript projects.</p>
-            </div>
-            <!-- Add more experiences as needed -->
         </div>
     </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:bostersoude@gmail.com">bostersoude@gmail.com</a></p>
-            <p>Phone: +229 61 93 19 97</p>
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-gray-800">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Experience</h2>
+            <div class="timeline space-y-8">
+                <div class="timeline-item flex items-center">
+                    <div class="timeline-icon bg-blue-600 p-4 rounded-full"></div>
+                    <div class="timeline-content ml-8">
+                        <h3 class="text-2xl font-semibold">Fullstack Web Developer - Inno Angels</h3>
+                        <p>Developed and maintained Shopify platform, integrated APIs, and enhanced UI using React.js.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item flex items-center">
+                    <div class="timeline-icon bg-blue-600 p-4 rounded-full"></div>
+                    <div class="timeline-content ml-8">
+                        <h3 class="text-2xl font-semibold">Freelance Web Developer - Fiverr</h3>
+                        <p>Provided web scraping and automation services for clients across various sectors.</p>
+                    </div>
+                </div>
+                <div class="timeline-item flex items-center">
+                    <div class="timeline-icon bg-blue-600 p-4 rounded-full"></div>
+                    <div class="timeline-content ml-8">
+                        <h3 class="text-2xl font-semibold">DevOps Engineer - E-GBAVOU</h3>
+                        <p>Worked on Amazon SaaS projects, deploying and managing web applications.</p>
+                    </div>
+                </div>
+                <!-- Add more experiences -->
+            </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Jacques Soude. All rights reserved.</p>
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Contact Me</h2>
+            <form class="max-w-lg mx-auto">
+                <div class="mb-6">
+                    <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                    <input type="text" id="name" class="w-full p-3 rounded bg-gray-700 text-white" required>
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                    <input type="email" id="email" class="w-full p-3 rounded bg-gray-700 text-white" required>
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                    <textarea id="message" class="w-full p-3 rounded bg-gray-700 text-white" rows="5"
+                        required></textarea>
+                </div>
+                <button type="submit"
+                    class="w-full bg-blue-600 p-3 rounded text-white hover:bg-blue-700 transition">Send Message</button>
+            </form>
         </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-4 text-center">
+        <p>&copy; 2024 Jacques Soude. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,57 +1,32 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+
+/* Custom Styles */
+.skill-item,
+.project-item {
+    transition: transform 0.3s ease-in-out;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+.skill-item:hover,
+.project-item:hover {
+    transform: scale(1.05);
 }
 
-nav {
-    background: #444;
-    padding: 10px 0;
-    text-align: center;
+.timeline-item {
+    position: relative;
+    padding-left: 2rem;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #1f2937;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.section {
-    padding: 20px 0;
-    background: #f4f4f4;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-h2 {
-    color: #333;
-    margin-bottom: 20px;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+.timeline-icon {
+    position: absolute;
+    left: -2rem;
 }
